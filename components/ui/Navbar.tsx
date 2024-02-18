@@ -15,14 +15,14 @@ const Navbar = () => {
                 <li>SignIn/Up</li>
             </ul>
         </div>
-        <div className='text-black md:hidden col-span-1 flex items-center justify-center'>
+        {/* <div className='text-black md:hidden col-span-1 flex items-center justify-center bg-black'>
           <select name="menu" id="menu" className='p-2 bg-gradient-to-r from-slate-900 to-slate-600 text-white'>
             <option value="home" className='text-black'><Link href='#hero'>Home</Link></option>
             <option value="services" className='text-black'><Link href="#waiter">Services</Link></option>
             <option value="info" className='text-black'><Link href='#info'>Info</Link></option>
             <option value="signup" className='text-black'>SignUp</option>
           </select>
-        </div>
+        </div> */}
     </div>
   )
 }
