@@ -33,13 +33,13 @@ function Stars() {
 
 const Hero = () => {
     return (
-        <div className='relative h-screen'>
+        <div className='relative h-screen text-center'>
             <Canvas className='fixed top-0 left-0 w-screen h-screen'>
                 <ambientLight />
                 <pointLight position={[0, 0, 5]} />
                 <Stars />
             </Canvas>
-            <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col'>
+            <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col p-6'>
                 <div className='font-bold text-3xl'>
                     Learn the <code className='bg-white text-black p-1'>Better</code> way with us __
                 </div>
@@ -47,7 +47,7 @@ const Hero = () => {
                   We are a productive learning platform and we make short videos for learning to code.
                 </div>
                 <div className="mt-16">
-                <button className="border p-3 border-slate-400 transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 rounded ">Explore</button>
+                <button className="border p-3 border-slate-400 transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 rounded">Explore</button>
             </div>
             </div>
         </div>
