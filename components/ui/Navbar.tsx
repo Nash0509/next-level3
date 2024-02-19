@@ -12,7 +12,7 @@ const Navbar = () => {
                 <Link href='#hero'><li>Home</li></Link>
                 <Link href="#waiter"><li>Services</li></Link>
                 <Link href='#info'><li>Info</li></Link>
-                <li>SignIn/Up</li>
+                <Link href='/signin'><li>SignIn/Up</li></Link>
             </ul>
         </div>
         {/* <div className='text-black md:hidden col-span-1 flex items-center justify-center bg-black'>

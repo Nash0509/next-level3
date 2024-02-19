@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import Sidebar from "./Sidebar"
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { useRouter } from 'next/navigation';
 
 function Stars() {
     const group = useRef();
@@ -36,6 +37,7 @@ function Stars() {
 const Hero = () => {
 
     const [status, setStatus] = useState('none');
+    const router = useRouter();
 
     const toggleSidebar = () => {
         setStatus(status === 'none' ? 'block' : 'none');
@@ -60,7 +62,9 @@ const Hero = () => {
                     We are a productive learning platform and we make short videos for learning to code.
                 </div>
                 <div className="mt-16">
-                    <button className="border p-3 border-slate-400 transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 rounded" onClick={toggleSidebar}>Explore</button>
+                    <button className="border p-3 border-slate-400 transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 rounded" onClick={() => {
+                        router.push('/upload')
+                    }}>Explore</button>
                 </div>
             </div>
             <div className='absolute right-0 top-0 bottom-0 border flex flex-col justify-center z-100 bg-black' style={{ display: `${status}` }}>
